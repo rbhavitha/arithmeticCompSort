@@ -13,3 +13,7 @@ read -p "enter c:" c
 Computation1=$(( a+b*c ))
 echo "Computation1=" $Computation1
 
+#uc3 Computation2
+
+Computation2=$(( a*b+c ))
+echo "Computation2=" $Computation2
