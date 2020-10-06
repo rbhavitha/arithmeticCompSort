@@ -25,3 +25,12 @@ echo "Computation3=" $Computation3
 #uc5 Computation4
 Computation4=$(( a%b+c ))
 echo "Computation4=" $Computation4
+
+#uc6 store result in dictionary
+declare -A computations
+Computation[1]=$Computation1
+Computation[2]=$Computation2
+Computation[3]=$Computation3
+Computation[4]=$Computation4
+
+echo "dictionary values are:" ${Computation[@]}
