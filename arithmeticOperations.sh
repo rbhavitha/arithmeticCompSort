@@ -34,3 +34,12 @@ Computation[3]=$Computation3
 Computation[4]=$Computation4
 
 echo "dictionary values are:" ${Computation[@]}
+
+#uc7 read values from dictionary to array
+variable=${Computation[@]}
+for values in $variable
+do
+	array[count]=$values
+	count=$(( $count+1 ))
+done
+echo "values in array:" ${array[@]}
