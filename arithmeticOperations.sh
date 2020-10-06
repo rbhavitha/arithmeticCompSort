@@ -46,3 +46,6 @@ echo "values in array:" ${array[@]}
 
 #uc8 computation result in descending order
 sortDescending=`echo ${array[@]} | awk 'BEGIN{RS=" "} {print $1}' |sort -nr `
+
+#uc8 computation result in ascending order
+sortAscending=`echo ${array[@]} | awk 'BEGIN{RS=" "} {print $1}' | sort -n `
